@@ -1,0 +1,96 @@
+# 🚦 Number Plate Detection Without Helmet
+
+## 📌 Project Overview
+
+The Number Plate Detection Without Helmet project is a computer vision application designed to identify motorcycle riders who are not wearing helmets and detect the corresponding vehicle number plates. The system combines object detection techniques with image processing to automate the process of monitoring traffic safety and identifying traffic rule violations.
+
+This project demonstrates the application of deep learning and computer vision in intelligent traffic surveillance. It detects motorcycles and riders, identifies whether a helmet is being worn, and extracts the vehicle number plate from riders without helmets for further monitoring and analysis.
+
+---
+
+## 🎯 Objectives
+
+- Detect motorcycles and riders in images or video.
+- Identify whether the rider is wearing a helmet.
+- Detect the number plate of motorcycles without helmets.
+- Improve road safety through automated traffic monitoring.
+- Reduce manual effort in identifying traffic violations.
+
+---
+
+## ✨ Features
+
+- Automatic motorcycle detection.
+- Helmet and non-helmet rider detection.
+- Vehicle number plate detection.
+- Real-time image and video processing.
+- Object detection using deep learning.
+- Accurate traffic violation monitoring.
+- Easy-to-understand detection results.
+
+---
+
+## 🛠️ Tools & Technologies
+
+- Python
+- YOLOv2
+- OpenCV
+- NumPy
+- Computer Vision
+- Deep Learning
+
+---
+
+## 📂 Dataset
+
+The project uses images and video datasets containing motorcycles, riders wearing helmets, riders without helmets, and vehicle number plates. The dataset was prepared and processed to train and evaluate the object detection model.
+
+---
+
+## 📈 Project Workflow
+
+1. Data Collection
+2. Data Preprocessing
+3. Model Training
+4. Object Detection
+5. Helmet Detection
+6. Number Plate Detection
+7. Result Analysis
+
+---
+
+## 📊 Project Output
+
+The system is capable of:
+
+- Detecting motorcycles in images and videos.
+- Identifying riders without helmets.
+- Detecting the corresponding vehicle number plate.
+- Displaying detection results with bounding boxes.
+- Supporting automated traffic monitoring.
+
+---
+
+## 🚀 Applications
+
+- Smart Traffic Management
+- Road Safety Monitoring
+- Traffic Rule Enforcement
+- Intelligent Transportation Systems
+- Automated Vehicle Surveillance
+
+---
+
+## 📷 Project Preview
+
+Project screenshots and output images are available in this repository.
+
+---
+
+## 📌 Conclusion
+
+The Number Plate Detection Without Helmet project demonstrates the practical use of computer vision and deep learning for traffic surveillance. By automatically detecting riders without helmets and identifying their vehicle number plates, the system helps improve road safety, supports traffic law enforcement, and reduces manual monitoring efforts.
+
+---
+
+⭐ If you found this project useful, consider giving this repository a star.
