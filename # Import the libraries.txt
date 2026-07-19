@@ -1,0 +1,51 @@
+# Import the libraries
+import pandas as pd
+import numpy as np
+
+# Read the .CSV file
+data = pd.read_csv("data.csv")
+print(data)
+
+# Convert the data into a numpy array
+d = np.array(data)[:, :-1]
+print(d)
+
+# Separate the target column
+t = np.array(data)[:, -1]
+print(t)
+
+# Define the null and wildcard symbols
+null = "ϕ"
+wildcard = "?"
+
+# Initialize the most specific hypothesis
+h = [null] * len(d[0])
+print(h)
+
+# Define the train function
+def train(d, t):
+  # Loop through the data
+  for i, val in enumerate(t):
+    # Check if the target value is positive
+    if val == "Yes":
+      # Update the hypothesis with the attribute values
+      h = d[i].copy()
+      break
+  # Loop through the data again
+  for i, val in enumerate(d):
+    # Check if the target value is positive
+    if t[i] == "Yes":
+      # Loop through the hypothesis
+      for x in range(len(h)):
+        # Compare the hypothesis with the attribute values
+        if val[x] != h[x]:
+          # Replace the mismatched ones with the wildcard symbol
+          h[x] = wildcard
+        else:
+          pass
+  # Return the final hypothesis
+  return h
+
+# Call the train function and print the output
+print(train(d, t))
+
